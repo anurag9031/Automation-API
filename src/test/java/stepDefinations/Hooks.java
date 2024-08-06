@@ -5,7 +5,7 @@ package stepDefinations;
 import io.cucumber.java.Before;
 
 import java.io.IOException;
-
+//We are using this class for Run alone DeletePlaceAPi as it having dependency on AddPlaceAPI.otherwise null pointer exception we will get.
 public class Hooks {
     @Before("@DeletePlaceAPI")
     public void beforeScenario() throws IOException {
